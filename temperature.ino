@@ -18,7 +18,7 @@ Serial.begin(9600);
 void loop() {
 
   temp = analogRead(A0);
-  temp = temp * 0.48828125 ;
+  temp = temp * 0.48828125 ; //Converting Temperature to celsius
   Serial.print(temp);
   Serial.println();
   
